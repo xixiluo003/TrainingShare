@@ -1,5 +1,4 @@
 # ======= requires =======
-require "rainbow"
 require "sinatra"
 require "sinatra/reloader"
 
@@ -11,13 +10,24 @@ get '/' do
 	erb :login
 end
 
-
-post '/sign_in' do
-	puts "\n******* sign_in *******"
-	puts "params.inspect: #{params.inspect}"
-	erb :home
+# ======= user =======
+get '/user' do
+	puts "\n******* user *******"
+	erb :user
 end
 
+# ======= sign_in =======
+get '/sign_in' do
+	puts "\n******* sign_in *******"
+	puts "params.inspect: #{params.inspect}"
+	redirect '/user'
+end
+
+# ======= signup =======
+get '/sign_up' do
+	puts "\n******* signup *******"
+	erb :sign_up
+end
 
 post '/sign_up' do
 	puts "\n******* sign_up *******"
@@ -27,23 +37,12 @@ post '/sign_up' do
 	puts "new_user: #{new_user}"
 	$users << new_user
 	puts "$users: #{$users}"
-	erb :home
+	erb :user
 end
 
-# ======= home =======
-get '/home' do
-	puts "\n******* home *******"
-	erb :home
-end
 
-# # ======= personal =======
-get '/personal' do
-	puts "\n******* personal *******"
-	# erb :personal
-end
-
-# # ======= share =======
-get '/' do
-	puts "\n******* personal *******"
-	# erb :personal
+# ======= share =======
+get '/share' do
+	puts "\n******* share *******"
+	erb :share
 end

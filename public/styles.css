@@ -1,5 +1,22 @@
 body {
-  background-color: lightyellow;
+  /*background-color: lightyellow;*/
+}
+#loginpage{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.8;
+  width: 100%;
+}
+
+#signupPage{
+  position: fixed;
+  top: 0;
+  right: 8%;
+  z-index: -1;
+  opacity: 0.8;
+  /*width: 100%;*/
 }
 
 .section {
@@ -20,7 +37,68 @@ body {
 }
 
 #signupBox {
-  margin: 10% 0 0 20%;
+  margin: 14% 0 0 15%;
   font-size: 25px;
   float: left;
+}
+.mainTopics {
+  border: 2px solid black;
+
+}
+
+#periodizationBx {
+  float: left;
+  width: 43%;
+  margin-left: 10%
+  border: 2px solid black;
+  font-size: 18px;
+}
+
+#periodizationPic {
+  width: 45%;
+  padding: 23px;
+  margin-left: 5%
+}
+
+.imgag {
+  display: inline-block;
+  float: left;
+	width: 50%;
+	height: auto;
+	margin: 5px;
+}
+
+.navigationMenu {
+  margin-bottom: 0;
+  padding: 0;
+}
+#peakchartPic {
+  width: 45%;
+  padding: 23px;
+  margin-left: 5%
+}
+
+.trainBx {
+  width: 47%;
+  height: 75%;
+  float: left;
+  margin-left: 2%;
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
+#enduranceimage {
+  width: 100%;
+}
+
+#strengthimage {
+  width: 100%;
+}
+
+#powerimage {
+  width: 100%;
+}
+
+#powerenduranceimage {
+  width: 100%;
 }

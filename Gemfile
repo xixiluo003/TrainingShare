@@ -1,6 +1,6 @@
 source 'https://rubygems.org/'
 # == ruby ==
-ruby '2.3.3'
+ruby '2.2.5'
 # == class ==
 gem 'rainbow'
 gem 'geolocater'
